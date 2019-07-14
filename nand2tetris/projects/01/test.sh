@@ -1,8 +1,21 @@
 #! /bin/bash
 
-../../tools/HardwareSimulator.sh Not.tst
-../../tools/HardwareSimulator.sh And.tst
-../../tools/HardwareSimulator.sh Or.tst
-../../tools/HardwareSimulator.sh Xor.tst
-../../tools/HardwareSimulator.sh Mux.tst
-../../tools/HardwareSimulator.sh DMux.tst
+set -e
+
+# Elementary Chips
+echo "Testing Elementary Chips..."
+elem_chips=(Not And Or Xor Mux Dmux)
+for chip in ${elem_chips[@]}; do
+    echo "Running ${chip}.tst"
+    ../../tools/HardwareSimulator.sh "${chip}.tst"
+done
+echo ""
+
+# 16-bit variants
+echo "Testing 16-bit variant chips..."
+sixteen_bit_chips=(Not16)
+for chip in ${sixteen_bit_chips[@]}; do
+    echo "Running ${chip}.tst"
+    ../../tools/HardwareSimulator.sh "${chip}.tst"
+done
+echo ""
