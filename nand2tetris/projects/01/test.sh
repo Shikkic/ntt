@@ -13,7 +13,7 @@ echo ""
 
 # 16-bit variants
 echo "Testing 16-bit variant chips..."
-sixteen_bit_chips=(Not16)
+sixteen_bit_chips=(Not16 And16)
 for chip in ${sixteen_bit_chips[@]}; do
     echo "Running ${chip}.tst"
     ../../tools/HardwareSimulator.sh "${chip}.tst"
