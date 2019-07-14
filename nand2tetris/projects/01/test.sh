@@ -4,3 +4,4 @@
 ../../tools/HardwareSimulator.sh And.tst
 ../../tools/HardwareSimulator.sh Or.tst
 ../../tools/HardwareSimulator.sh Xor.tst
+../../tools/HardwareSimulator.sh Mux.tst
