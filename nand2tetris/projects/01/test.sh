@@ -23,7 +23,7 @@ main () {
     sixteen_bit_chips=(Not16 And16 Or16 Mux16)
     test_chip_sets "16-bit variant chips" sixteen_bit_chips
 
-    multiway_variant_chips=(Or8Way)
+    multiway_variant_chips=(Or8Way Mux4Way16)
     test_chip_sets "Or8Way" multiway_variant_chips 
 }
 
