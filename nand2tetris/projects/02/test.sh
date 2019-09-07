@@ -17,7 +17,7 @@ test_chip_sets () {
 }
 
 main () {
-    addr_chips=(HalfAdder FullAdder Add16)
+    addr_chips=(HalfAdder FullAdder Add16 Inc16)
     test_chip_sets "Adder Chips" addr_chips
 }
 
