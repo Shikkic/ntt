@@ -1,8 +1,8 @@
-# ntt (Short for NandToTetris)
+# ntt
 
-This is a repository for me to follow the nand-to-tetris course. It's a course that takes you through building a modern computer from scratch. Whether you're just curious about computers, a hobbiest, or an expert, I would deffintely recommend it!
+This is a repository for me to store work related to the nand-to-tetris course. It's a project that takes you through building a modern computer from scratch. Starting from a single Nand gate all the way to writing a tetris game running on your hacked together computer. Whether you're just curious about computers, a hobbiest, or an expert, I would deffintely recommend it!
 
-For now I'm currently following along each chapter and implementing necessary logic. I do plan to add certain posts to each project so that I can help solitify what I learned.
+For now I'm currently following along each chapter of the book (The Elements of Computing Systems) and implementing necessary logic for each project. I do plan to add posts to each project so that I can help solitify what I learned.
 
 ## Testing
 
