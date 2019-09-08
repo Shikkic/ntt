@@ -17,7 +17,7 @@ test_chip_sets () {
 }
 
 main () {
-    elem_chips=(Not And Or Xor Mux Dmux)
+    elem_chips=(Not And Or Xor Mux DMux)
     test_chip_sets "Elementary Chips" elem_chips
 
     sixteen_bit_chips=(Not16 And16 Or16 Mux16)
