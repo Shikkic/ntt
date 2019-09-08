@@ -1,5 +1,8 @@
-# ntt
+#### External Dependencies
+[![bash](https://img.shields.io/badge/bash-%5E4.4-blue.svg)](https://www.gnu.org/software/bash/)
+[![java](https://img.shields.io/badge/jre-%5E8.0-blue.svg)](https://www.java.com/en/download/)
 
+#### Health
 [![CircleCI](https://circleci.com/gh/Shikkic/ntt.svg?style=svg)](https://circleci.com/gh/Shikkic/ntt)
 
 <p align="center">
