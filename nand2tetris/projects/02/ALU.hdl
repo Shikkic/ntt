@@ -42,5 +42,39 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-   // Put you code here:
+        // Zero the x input if zx == true, else return x.
+        Mux16 (a=x, b[0..15]=false, sel=zx, out=x1);
+
+        // Negate x if nx == 1, else return x.
+        Not16 (in=x1, out=NotX);
+        Mux16 (a=x1, b=NotX, sel=nx, out=x2);
+
+        // Zero the y input if zy == true, else return y.
+        Mux16 (a=y, b[0..15]=false, sel=zy, out=y1);
+
+        // Negate y if ny == 1, else return y.
+        Not16 (in=y1, out=NotY);
+        Mux16 (a=y1, b=NotY, sel=ny, out=y2);
+
+        // Return And(x,y), if f == 0, else Add(x,y).
+        And16 (a=x2, b=y2, out=x2Andy2);
+        Add16 (a=x2, b=y2, out=x2Addy2);
+        Mux16 (a=x2Andy2, b=x2Addy2, sel=f, out=result);
+        
+        // Return the unmodified output if "no == 0",else return negated output.
+        Not16 (in=result, out=notResult);
+        Mux16 (a=result, b=notResult, sel=no, out=out, out[15]=ngOut, out[0..7]=zrIn1, out[8..15]=zrIn2);
+
+        // Set zr to 1 if (out == 0), 0 otherwise.
+        // NOTE: This ORs all the bits in the output, which will return true if
+        // a single bit is true in the bit array.
+        Or8Way (in=zrIn1, out=zr1);
+        Or8Way (in=zrIn2, out=zr2);
+        Or (a=zr1, b=zr2, out=zr3);
+        Not (in=zr3, out=zrOut, out=zr);
+
+        // Set ng to 1 if (out < 0),  0 otherwise.
+        // NOTE: This is determined by checking  if the ngOut 
+        // (which is the last bit of the array, the negative bit) is true or false.
+        And (a=true, b=ngOut, out=ng);
 }

@@ -19,6 +19,9 @@ test_chip_sets () {
 main () {
     addr_chips=(HalfAdder FullAdder Add16 Inc16)
     test_chip_sets "Adder Chips" addr_chips
+
+    alu_chips=(ALU)
+    test_chip_sets "ALU Chip" alu_chips
 }
 
 main "$@"
