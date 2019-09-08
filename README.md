@@ -15,7 +15,7 @@ All projects have their own `test.sh` to validate whatever test suites they migh
 $ ./test.sh
 ```
 
-There is also a master test suite at the top level dir you can execute to validate all _projects_. _(This is mostly useful for CI)_.
+There is also a master test suite at the top level dir you can execute to validate _all_ projects. _(This is mostly useful for CI)_.
 
 ```bash
 # ntt
