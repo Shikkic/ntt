@@ -1,2 +1,4 @@
 *.dat
 .DS_Store
+
+*.out
