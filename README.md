@@ -3,8 +3,7 @@
 [![CircleCI](https://circleci.com/gh/Shikkic/ntt.svg?style=svg)](https://circleci.com/gh/Shikkic/ntt)
 
 <p align="center">
-  <img src="https://i.imgur.com/kL1GCvPm.png"/>
-  <p align="center"><i><small>https://www.flaticon.com/free-icon/old-computer_980958</small></i></p>
+  <a src="https://www.flaticon.com/free-icon/old-computer_980958"><img src="https://i.imgur.com/kL1GCvPm.png"/></a>
 </p>
 
 This is a repository for me to store work related to the nand-to-tetris course. It's a project that takes you through building a modern computer from scratch. Starting from a single Nand gate all the way to writing a tetris game running on your hacked together computer. Whether you're just curious about computers, a hobbiest, or an expert, I would deffintely recommend it!
