@@ -30,5 +30,5 @@ There is also a master test suite at the top level dir you can execute to valida
 
 ```bash
 # ntt
-$ ./test.sh
+$ ./test_all.sh
 ```
